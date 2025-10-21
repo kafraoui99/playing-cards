@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
-
+import { PlayingCardComponent } from "./components/playing-card/playing-card.component";
 @Component({
   selector: 'app-root',
   standalone: true, // tjrs a True 
-  template:'<h1>Hello World</h1>'
+  imports: [PlayingCardComponent],
+  templateUrl:'./app.component.html',
+  styleUrl:'./app.component.css',
+  
 })
 export class AppComponent {
 }
